@@ -1,0 +1,292 @@
+*{
+margin:0px;
+     padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+.imageHead{
+    background-image: url(logo.png);
+    background-size: contain;
+    width:130px;
+    height:130px;
+    margin:auto;
+  margin-top:10px;
+}
+header{
+  box-shadow: 0px 0px 4px 2px #888;
+    border-radius: 0 0 15px 15px ;
+    width:65%;
+    height:200px;
+    margin:auto;
+    margin-top:-10px;
+    
+}
+ul{
+    display: inline-block;
+  
+}
+ul>a{
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 100%;
+    font-size: 19px;
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+    font-family: sans-serif;
+    transition: color 0.15s;
+}
+ul>a:hover{
+   color: darkturquoise;
+}
+.linksHead{
+    
+      margin: auto;
+    margin-top:10px;
+    width:80%;
+    height: 50px;
+    text-align: center;
+   
+}
+.firstWrap{
+      overflow: hidden;
+    width:80%;
+    height:400px;
+    margin: auto;
+    margin-top:50px;
+     box-shadow: 0px 0px 4px 2px #888;
+    border-radius: 15px;
+}
+.secondWrap{
+    
+    width:80%;
+    height:auto;
+    margin: auto;
+    margin-top:50px;
+    
+    display: flex;
+}
+.news{
+ width:65%;
+    height:auto;
+  
+    margin: auto;
+    margin-left: 0px;
+}
+.news>h2{
+    margin:20px;
+    margin-left:0px;
+    margin-top:0px;
+    font-size: 28px;
+}
+.afisha>h2{
+    margin:20px;
+    margin-right:0px;
+    margin-top:0px;
+    font-size: 28px;
+    text-align: end;
+}
+.news>article{
+     width:100%;
+    min-height:270px;
+     box-shadow: 0px 0px 4px 2px #888;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom:50px;
+    margin-left: 0px;
+    display: flex;
+}
+.afisha{
+    
+    width: 30%;
+    height:100%;
+   
+    margin: auto;
+    margin-right: 0px;
+    margin-top:0px;
+}
+.clock_img{
+    width:50%;
+    background-image: url(clock-icon-png.png);
+ background-size: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100%;
+
+    float:right;
+}
+.afisha>article{
+    width:100%;
+    height:270px;
+     box-shadow: 0px 0px 4px 2px #888;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom:50px;
+    margin-left: 0px;
+  display: flex;
+}
+.news>article>div:first-child{
+ 
+   /* background-color: aqua;*/
+    width:42%;
+    height: 95%;
+    margin: auto;
+    margin-left: 6px;
+    border-radius: 10px 0px 0px 10px ;
+  
+}
+.afisha>article>div:first-child{
+ 
+   /* background-color: aqua;*/
+    width:42%;
+    height: 95%;
+    margin: auto;
+    
+    border-radius: 10px 0px 0px 10px ;
+  
+}
+.afisha>article>div>p{
+ width:auto;
+   /* background-color: aqua;*/
+   text-align: center;
+    margin: auto;
+    height: auto;
+    border-radius: 10px 0px 0px 10px ;
+    font-size:20px;
+  padding-top:10px;
+}
+/*.schedule{
+    width:50px;
+    height:50px;
+    margin:50px;
+    background-color: aqua;
+    float:right;
+}*/
+.news>article>div:last-child{
+    
+   /* background-color: aqua;*/
+    width:55%;
+    height: 85%;
+    /*height:100%;*/
+    margin: auto;
+    margin-top:15px;
+    
+}
+.news>article>div>p{
+width:90%;
+    margin: auto;
+    font-size:18px;
+    
+}
+.news>article>div>p>a{
+    font-weight: bolder;
+}
+.news>article>div>h3{
+width:90%;
+    margin: auto;
+    font-size: 28px;
+    padding:20px;
+    
+}
+.afisha>article>div>h3{
+width:90%;
+    margin: auto;
+ text-align: center;
+S    font-size: 28px;
+    padding-top:20px;
+    padding-bottom:20px;
+    
+}
+footer{
+  box-shadow: 0px 0px 4px 2px #888;
+    border-radius: 15px 15px 0px 0px ;
+    width:65%;
+    height:200px;
+    margin:auto;
+    margin-top:0px;
+    
+}
+footer>.imageHead{
+ padding-top:25px;
+    background-position: bottom;
+    background-repeat: no-repeat;s
+ margin-toP:0px;
+ 
+}
+.slider{
+  
+    width: 100%;
+    height:100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(oblozhka_klub_MGIMO.png);
+
+}
+.news>article>div:nth-child(1){
+    
+}
+.img{
+    margin: auto;
+    margin-top:15px;
+background-origin: content-box;
+
+   width:85%;
+height:230px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px ;
+    background-image: url(weopened.png);
+}
+.img>img{
+    width:80%;
+    height: auto;
+margin: 20px;
+background-position: center;
+    text-align: center;
+}
+.footerIcons{
+    display: flex;
+    /*background-color: aqua;*/
+    width:33%;
+    height:100%;
+    z-index: 10;
+    margin-left:25px;
+}
+.footerMail{
+        display: flex;
+   /* background-color: aqua;*/
+    width:33%;
+    height:100%;
+      z-index: 10;
+    margin-right:25px;
+}
+footer{
+    display: flex;
+}
+.vkIcon>img,.instIcon>img{
+  
+ width:100%;
+   
+}
+.vkIcon,.instIcon{
+   display: block;
+    margin: auto;
+   
+  width:50px;
+    height:50px;
+    z-index:10px;
+}
+.vkIcon{
+ margin-right:10px;
+}
+.instIcon{
+    margin-left:10px;
+
+}
+.footerMail>a{
+  text-decoration: none;
+    color:black;
+    
+    margin: auto;
+}

@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+	<body>
+        <div class="tables">
+        <div class="table">
+    <div class="upperDeck">
+        <p>Понедельник, <span id="dateN"></span></p>
+        <div class="midDeck">
+            <p id="pairName"></p>
+            <span id="cspan10" class=""></span>
+            <p>9:00-10:30</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan11"></span>
+                    
+            <p>10:40-12:10</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan12"></span>
+            <p>12:50-14:20</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan13"></span>
+            <p>14:30-16:00</p>
+        </div>
+    </div>
+            <div class="upperDeck">
+        <p>Вторник,  <span id="dateN"></span></p>
+        <div class="midDeck">
+            <p id="pairName"></p>
+                <span id="cspan20"></span>
+            <p>9:00-10:30</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan21"></span>
+            <p>10:40-12:10</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan22"></span>
+            <p>12:50-14:20</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan23"></span>
+            <p>14:30-16:00</p>
+        </div>
+    </div>
+                  <div class="upperDeck">
+        <p>Среда,  <span id="dateN"></span></p>
+        <div class="midDeck">
+            <p id="pairName"></p>
+            <span id="cspan30"></span>
+            <p>9:00-10:30</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan31"></span>
+            <p>10:40-12:10</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan32"></span>
+            <p>12:50-14:20</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan33"></span>
+            <p>14:30-16:00</p>
+        </div>
+    </div>
+        </div>
+        
+          <div class="table">
+    <div class="upperDeck">
+        <p>Четверг,  <span id="dateN"></span></p>
+        <div class="midDeck">
+            <p id="pairName"></p>
+            <span id="cspan40"></span>
+            <p>9:00-10:30</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan41"></span>
+            <p>10:40-12:10</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan42"></span>
+            <p>12:50-14:20</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan43"></span>
+            <p>14:30-16:00</p>
+        </div>
+    </div>
+            <div class="upperDeck">
+        <p>Пятница,  <span id="dateN"></span></p>
+        <div class="midDeck">
+            <p id="pairName"></p>
+            <span id="cspan50"></span>
+            <p>9:00-10:30</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan51"></span>
+            <p>10:40-12:10</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan52"></span>
+            <p>12:50-14:20</p>
+        </div>
+                <div class="midDeck">
+            <p id="pairName"></p>
+                    <span id="cspan53"></span>
+            <p>14:30-16:00</p>
+        </div>
+    </div>
+              <div class="upperDeck">
+        <p>Суббота,   <span id="dateN"></span></p>
+                  <div class="midDeck">
+            <p id="whatWeekNow">Неделя</p>
+            <p><a id="changeWeekBtn" href="#">Перейти к другой неделе</a></p>
+        </div>
+      <!--  <div class="midDeck">
+            <p>Matematica</p>
+            <p>9:00-10:30</p>
+        </div>
+                <div class="midDeck">
+            <p>Matematica</p>
+            <p>9:00-10:30</p>
+        </div>
+                <div class="midDeck">
+            <p>Matematica</p>
+            <p>9:00-10:30</p>
+        </div>
+                <div class="midDeck">
+            <p>Matematica</p> 
+                    <span id="cspan" class=""></span>
+            <p>14:30-16:00</p>
+        </div>-->
+    </div>
+        </div>
+            </div>
+        <script>
+            
+Date.prototype.today = function () { 
+     return ((this.getDate() < 10)?"0":"") + this.getDate() +"/"+(((this.getMonth()+1) < 10)?"0":"") + (this.getMonth()+1) +"/"+ this.getFullYear();
+}
+
+// For the time now
+Date.prototype.timeNow = function () {
+     return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes() +":"+ ((this.getSeconds() < 10)?"0":"") + this.getSeconds();
+}
+        
+        var datetime = "LastSync: " + new Date().today() + " @ " + new Date().timeNow();
+            
+        let current = new Date();
+        let day = current.getDay(); 
+        console.log("Day = "+ day);
+          //  alert(datetime);
+        console.log(new Date().timeNow());
+         let spanN;
+        CheckPair();
+             
+        function CheckPair(){
+             timeN = new Date().timeNow();
+            let pairN = 9;
+            if((timeN>"09:00")&&(timeN < "10:30")){
+                console.log("RES");
+            pairN = 0;
+            }
+            if((timeN>"10:40")&&(timeN < "12:10")){
+                console.log("RES");
+            pairN = 1;
+            }
+            if((timeN>"12:50")&&(timeN < "14:20")){
+                console.log("RES");
+            pairN = 2;
+            }
+            if((timeN>"14:30")&&(timeN < "16:00")){
+                console.log("RES");
+            pairN = 3;
+            }
+            
+                /*+day+paitN -->*/
+           spanN = document.getElementById("cspan"+day+pairN+"");
+            
+           if(spanN!=null) spanN.classList.add("currPair");
+                //if(pairN>0) /*document.getElementById("cspan"+day+pairN-1+"").classList.remove("currPair");*/
+            
+            console.log("Current day = " + day +" /n Current pair = " + pairN);
+/*           var day =  new Date();
+            
+console.log(day); // Apr 30 2000
+
+var nextDay = new Date(day);
+nextDay.setDate(day.getDate() + 3);
+dateN.innerHTML = nextDay.getDate();
+console.log(nextDay); // May 01 2000  */
+        }
+          /*  setInterval(function(){
+    CheckPair()
+}, 30000);*/
+            
+/*            let spanN = document.getElementById(cspan);
+            spanN.classList.toggle*/
+        console.log(timeN);
+        </script>
+        <script src="moment.js"></script>
+        <script>
+            
+        moment.locale('ru'); console.log(moment().format('MMMM Do YYYY, h:mm:ss a', 'ru', true));
+        console.log(moment().add(1,'days').format('ll'));
+            
+            
+                 let activeCounter = 1;
+/*             function now(){
+                  
+                for(let i =0; i<days.length; i++)
+                days[i] = dateN[i].innerHTML;
+            
+            }
+            now();
+            */
+            
+            
+           /* for(let i =0; i<1; i++){
+    dateN[day].innerHTML = moment().add(i,'days').format('ll');
+            }*/
+              let pairsNe = ["Математика","Иностранный язык","Основы алгоритмизации и программирования","РваПООН","Математика","РваПООН","Инострынный язык","Архитектура","Иностранный язык","РваПООН","Архитектура","Менеджмент","Социальная психология","Безопасность жизнедеятельности","История","ОТИ"," ","История","Физическая культура"," "];
+                
+            let pairsC  = ["Разработка","Иностранный язык","Основы бухалтерского учета","Архитектура","Математика","РваПООН","Инострынный язык","ОТИ","Иностранный язык","РваПООН","Архитектура","Социальная психология","Менеджмент","Безопасность жизнедеятельности","История","Социальная психология","Основы бухалтерского учета","История","Физическая культура","ОТИ"];
+        let ii = 1;
+           // if(ii==1){
+            let Nday = 0;
+            let Nlast = 0;
+            if(activeCounter==1)
+        for(let i =0;i<=day-1;i++){  
+            
+            dateN[i].innerHTML = moment().subtract((day-1)-i,'days').format('ll');
+            console.log("DAY -1 = " + day*-1);   
+              //  } 
+            }
+var curr = new Date; // get current date
+var first = curr.getDate() - curr.getDay(); // First day is the day of the month - the day of the week
+var last = first + 6; // last day is the first day + 6
+
+var firstday = new Date(curr.setDate(first)).toUTCString();
+var lastday = new Date(curr.setDate(last)).toUTCString();
+            Nday = day;
+            Nlast = last;
+            Nfirst = first;
+            let days = [];
+            if(activeCounter==1)
+            for(let i = Nday; i<=Nlast; i++){
+                try{
+            dateN[i].innerHTML = moment().add(i-day+1,'days').format('ll');
+                }
+                catch{}
+                 
+            }
+        /*    for(let i =day;i>day-1;i--){  
+            dateN[i].innerHTML = moment().add((day-1)+i,'days').format('ll');
+            console.log("DAY -1 = " + day*-1);   
+              //  } 
+            }*/
+            /*dateN[day].innerHTML = moment().add(i,'days').format('ll');*/
+            console.log("moment week "+moment().week());
+            
+           
+          
+            let nechet = false;
+                         if(activeCounter==1){
+                for(let i =0; i<days.length; i++)
+                days[i] = dateN[i].innerHTML;
+            }
+            if(moment().week()%2==0){
+
+                  whatWeekNow.innerHTML="Чётная неделя";
+                nechet = false;
+             for(let i =0; i<pairName.length; i++)
+                 pairName[i].innerHTML = pairsC[i];
+                
+            }
+            else{
+              /*    if(activeCounter==0){
+                for(let i =0; i<days.length; i++)
+                days[i] = dateN[i].innerHTML;
+            }*/
+                 whatWeekNow.innerHTML="Нечётная неделя";
+                nechet = false;
+                
+                 for(let i =0; i<pairName.length; i++)
+                 pairName[i].innerHTML = pairsNe[i];
+            }
+        /*   if(activeCounter!=0){
+               for(let i =0; i<days.length; i++)
+                days[i] = dateN[i].innerHTML;
+         }*/
+    changeWeekBtn.onclick = function() {
+        console.log(activeCounter);
+          pairsNe = ["Математика","Иностранный язык","Основы алгоритмизации и программирования","РваПООН","Математика","РваПООН","Инострынный язык","Архитектура","Иностранный язык","РваПООН","Архитектура","Менеджмент","Социальная психология","Безопасность жизнедеятельности","История","ОТИ"," ","История","Физическая культура"," "];
+                
+             pairsC  = ["Разработка","Иностранный язык","Основы бухалтерского учета","Архитектура","Математика","РваПООН","Инострынный язык","ОТИ","Иностранный язык","РваПООН","Архитектура","Социальная психология","Менеджмент","Безопасность жизнедеятельности","История","Социальная психология","Основы бухалтерского учета","История","Физическая культура","ОТИ"];
+                activeCounter+=1;
+/*          if(activeCounter!=0){
+               for(let i =0; i<days.length; i++)
+                days[i] = dateN[i].innerHTML;
+         }*/
+                if(activeCounter%2==0){
+                     for(let i = 0; i<=dateN.length-1; i++){
+            dateN[i].innerHTML = moment().add(Nlast-Nfirst+i+day,'days').format('ll');
+                }
+                }
+        
+                    else{
+/*
+                        Nday 
+Nlast
+*/
+                    console.log(activeCounter);
+                    
+             for(let i = 0; i<=dateN.length-1; i++){
+            moment().subtract(Nlast+Nfirst-2+i,'days');
+                 for(let i =0;i<=Nday-1;i++){  
+            dateN[i].innerHTML = moment().subtract((Nday-1)-i,'days').format('ll');
+            console.log("DAY -1 = " + day*-1);   
+              //  } 
+            }
+ for(let i = 0; i<=5; i++){
+     if(dateN!=="undefined")
+     if(dateN[i] !== "undefined")
+            dateN[i].innerHTML = moment().add(i-Nday+1,'days').format('ll');
+                
+                 
+            }
+                }
+                  /*      for(let i = 0; i<=dateN.length-1; i++){
+             dateN[i].innerHTML = days[i];
+                } */
+                    
+                    }
+               day+=6;
+                     if(nechet==true){
+                          whatWeekNow.innerHTML="Нечётная неделя";
+                  for(let i =0; i<pairName.length; i++)
+                 pairName[i].innerHTML = pairsNe[i];
+                nechet = false;
+                 
+              }  
+                 else if(nechet==false){
+               /*      for(let i = 0; i<=dateN.length-1; i++){
+            dateN[i].innerHTML = moment().add(last+first-2+i,'days').format('ll');
+            }*/
+                      whatWeekNow.innerHTML="Чётная неделя";
+                  for(let i =0; i<pairName.length; i++)
+                 pairName[i].innerHTML = pairsC[i];
+                nechet =true;
+                 
+              } 
+                
+                
+            let pairN = 9;
+            if((timeN>"09:00")&&(timeN < "10:30")){
+                console.log("RES");
+            pairN = 0;
+            }
+            if((timeN>"10:40")&&(timeN < "12:10")){
+                console.log("RES");
+            pairN = 1;
+            }
+            if((timeN>"12:50")&&(timeN < "14:20")){
+                console.log("RES");
+            pairN = 2;
+            }
+            if((timeN>"14:30")&&(timeN < "16:00")){
+                console.log("RES");
+            pairN = 3;
+            }
+                 let spanNn = document.getElementById("cspan"+Nday+pairN+"");
+        if(spanN!==null)
+       if(spanN.classList.contains("currPair")) spanN.classList.toggle("currPair");
+        console.log("TEs");
+                    timeN = new Date().timeNow();
+                if(spanNn!=null)
+
+                if(activeCounter%2!=0){
+                    
+                }
+       
+            };
+        </script>
+  </body>
+</html>
