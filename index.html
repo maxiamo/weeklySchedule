@@ -321,7 +321,7 @@ var lastday = new Date(curr.setDate(last)).toUTCString();
          }*/
                 if(activeCounter%2==0){
                      for(let i = 0; i<=dateN.length-1; i++){
-            dateN[i].innerHTML = moment().add(Nlast-Nfirst+i+day,'days').format('ll');
+            dateN[i].innerHTML = moment().add(Nlast-Nfirst+i-1,'days').format('ll');
                 }
                 }
         
