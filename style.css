@@ -20,10 +20,10 @@
 
 .table{
    
-    width:30vw;
+    width:auto;
     height:auto;
     background-color:fuchsia;
-    margin: auto;
+    margin: 10px;
     margin-top:0;
 }
 .midDeck:last-child{
@@ -33,12 +33,14 @@
     border-radius: 5px 5px 0px 0px;
 }
 .tables{
-    width:90vh;
+    width:auto;
     height:100%;
     display:flex;
     flex-direction: row;
     margin: auto;
-   
+  justify-content: center;
+    justify-items: center;
+    justify-self: center;
 }
 .currPair{
     width:15px;
@@ -55,11 +57,14 @@
 }
 @media(max-width:800px){
     .tables{
-    
+    width:auto;
+        margin: auto;
     flex-direction: column;
    
 }
     .table{
+        width:auto;
+        margin: auto;
         margin-bottom:10px;
     }
 }
